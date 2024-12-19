@@ -1,0 +1,281 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color:#06151fe6;
+    line-height: 1.6;
+}
+
+/* Welcome Section Styles */
+#welcome-section {
+    text-align: center;
+    padding: 140px 50px; /* Adjusted padding to balance section spacing */
+    
+    min-height: 100vh; /* Ensure full height coverage */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+}
+
+/* Logo Image Styles - Circular and Zoomed */
+#logo-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
+    margin-bottom: 50px; /* Increase margin for better spacing */
+    transform: scale(1.8); /* Slight zoom for visual impact */
+}
+
+/* Welcome Text */
+#welcome-section h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+}
+
+#welcome-section h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    letter-spacing: 0.05em;
+}
+
+/* Get Started Button */
+#welcome-section button {
+    padding: 18px 35px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f8e7a5;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px; /* Oblong shape */
+    margin-top: 60px; /* More space from the text */
+}
+
+#welcome-section button:hover {
+    background-color: #ad0909;
+}
+
+/* About Section */
+#about-ranzxi {
+    background-color: #444447;
+    padding: 50px;
+    border-radius: 20px;
+    color: #E0E0E0;
+    margin: 50px 0; /* Adjust margin for better spacing between sections */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+    max-width: 1200px;
+    text-align: left;
+}
+
+#about-ranzxi h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#about-ranzxi p {
+    font-size: 1.2em;
+    color: #FFF4E6;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #222;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.footer-link {
+    color: #EAB543;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+
+/* Mobile View (Small screens) */
+@media (max-width: 767px) {
+
+    /* Welcome Section */
+    #welcome-section {
+        padding: 80px 30px; /* Adjust padding for smaller screens */
+    }
+
+    #logo-img {
+        width: 150px;
+        height: 150px;
+        transform: scale(1.5); /* Adjust scale for smaller devices */
+    }
+
+    #welcome-section h1 {
+        font-size: 36px;
+    }
+
+    #welcome-section h2 {
+        font-size: 20px;
+    }
+
+    #welcome-section button {
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+
+    /* About Section */
+    #about-ranzxi {
+        padding: 30px;
+    }
+
+    #about-ranzxi h2 {
+        font-size: 2em;
+    }
+
+    #about-ranzxi p {
+        font-size: 1em;
+    }
+
+    /* Footer Section */
+    footer {
+        padding: 20px 0;
+    }
+
+    .footer-content {
+        padding: 0 20px;
+    }
+
+    .footer-content p {
+        font-size: 0.8em;
+    }
+}
+
+/* Tablet View (Medium screens) */
+@media (max-width: 1024px) {
+
+    /* Welcome Section */
+    #welcome-section {
+        padding: 120px 40px;
+    }
+
+    #logo-img {
+        width: 180px;
+        height: 180px;
+        transform: scale(1.6); /* Adjust scale for tablets */
+    }
+
+    #welcome-section h1 {
+        font-size: 48px;
+    }
+
+    #welcome-section h2 {
+        font-size: 22px;
+    }
+
+    #welcome-section button {
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+
+    /* About Section */
+    #about-ranzxi {
+        padding: 40px;
+    }
+
+    #about-ranzxi h2 {
+        font-size: 2.2em;
+    }
+
+    #about-ranzxi p {
+        font-size: 1.1em;
+    }
+
+    /* Footer Section */
+    footer {
+        padding: 25px 0;
+    }
+
+    .footer-content {
+        padding: 0 30px;
+    }
+
+    .footer-content p {
+        font-size: 0.85em;
+    }
+}
+
+/* Desktop View (Large screens) */
+@media (min-width: 1025px) {
+
+    /* Welcome Section */
+    #welcome-section {
+        padding: 140px 50px;
+    }
+
+    #logo-img {
+        width: 200px;
+        height: 200px;
+        transform: scale(1.8); /* Keep the original zoom for desktop */
+    }
+
+    #welcome-section h1 {
+        font-size: 56px;
+    }
+
+    #welcome-section h2 {
+        font-size: 24px;
+    }
+
+    #welcome-section button {
+        padding: 18px 35px;
+        font-size: 22px;
+    }
+
+    /* About Section */
+    #about-ranzxi {
+        padding: 50px;
+    }
+
+    #about-ranzxi h2 {
+        font-size: 2.5em;
+    }
+
+    #about-ranzxi p {
+        font-size: 1.2em;
+    }
+
+    /* Footer Section */
+    footer {
+        padding: 30px 0;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-content p {
+        font-size: 0.9em;
+    }
+}
